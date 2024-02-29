@@ -1,0 +1,210 @@
+header {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background-color: #1B263B;
+    color: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.ul {
+    display: flex;
+    align-items: center;
+    margin-left: 60rem;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    text-transform: uppercase;
+}   
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    border-bottom: 1px solid #ccc;
+}
+
+.container-sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width: 400px;
+    margin: 30px;
+}
+
+.saiba_mais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.saibamais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    width: 150px;
+    height: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #1B263B;
+    color: #ccc;
+    border-radius: 40px;
+}
+
+.saibamais:hover {
+    background-color: #ccc;
+    color: #1B263B;
+}
+
+.imgRafael {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 380px;
+    width: 380px;
+    border-radius: 200px;
+}
+
+.sobre {
+   margin: 10px;
+}
+
+.h2-sobre {
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.p-sobre {
+    margin: 10px 0px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+/* CTA PORTOFOLIO */
+
+.container-portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 850px;
+    background-color: #1B263B;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1150px;
+    height: 800px;
+    margin: 50px;
+    padding: 10px;
+}
+
+.cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    height: 300px;
+    margin: 30px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+
+.card {
+    width: 190px;
+    height: 200px;
+    border: 1px solid red;
+    margin: 15px;
+    border-radius: 40px;
+}
+
+/* .card img {
+    width: 190px;
+    height: 200px;
+    border-radius: 40px;
+} */
+
+.button-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 190px;
+    height: 30px;
+    border: 1px solid #ccc;
+    margin: 5px 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ccc;
+    border-radius: 40px;
+}
+
+.button-card:hover {
+    background-color: #ccc;
+    color: #1B263B;
+    border: 1px solid #1B263B;
+}
+
+/* FOOTER  */   
+
+footer {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    margin-top: 50px;
+    background-color: #1B263B;
+    color: #fff;
+}
+
+footer h3 {
+    text-transform: uppercase;
+    font-weight: bold;   
+    margin: 10px;
+}
+
+footer img {
+    width: 30px;
+}
+
+.ulSocial {
+    display: flex;
+}
+
+.linksFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 45rem;
+}
+
+.socialMedia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 3rem;
+}
+
