@@ -17,6 +17,12 @@ const Header = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    const closeMenu = () => {
+        if (isMenuOpen) {
+            setIsMenuOpen(false);
+        }
+    }
+
     return (
         <header>
             <h1>RSO</h1>
