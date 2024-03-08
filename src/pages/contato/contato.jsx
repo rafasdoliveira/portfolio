@@ -1,5 +1,6 @@
 // Componente
 import NavRedeSocial from '../../constants/navRedeSocial/navRedeSocial';
+import Header from '../../components/header/header';
 // Rota
 import { Link } from 'react-router-dom';
 // Estilos
@@ -11,8 +12,8 @@ const Contato = () => {
 
     return (
         <>
+            <Header/>
             <div className="contatoPage">
-                
                 <div className="form">
                     <form>
                         <h1 className='textos'>Me envie um e-mail</h1>
