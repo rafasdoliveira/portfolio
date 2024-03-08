@@ -14,14 +14,18 @@ const Contato = () => {
         <>
             <Header/>
             <div className="contatoPage">
-                <div className="form">
+                <div className="formContato">
                     <form>
-                        <h1 className='textos'>Me envie um e-mail</h1>
-                        <input type="text" name="assunto" id="assunto" placeholder='Assunto'/>
-                        <input type="text" name="nome" id="nome" placeholder='Nome'/>
-                        <input type="email" name="email" id="email" placeholder='E-mail'/>
-                        <textarea name="mensagem" id="mensagem" placeholder='Mensagem'/>
-                        <input type="submit" value="Enviar" />
+                        <div className="input">
+                            <h1 className='textos'>Me envie um e-mail</h1>
+                            <input type="text" name="assunto" id="assunto" placeholder='Assunto'/>
+                            <input type="text" name="nome" id="nome" placeholder='Nome'/>
+                            <input type="email" name="email" id="email" placeholder='E-mail'/>
+                            </div>
+                        <div className="textarea">
+                            <textarea name="mensagem" id="mensagem" placeholder='Mensagem'/>
+                            <input type="submit" value="Enviar" />
+                        </div>
                     </form>
                 </div>
                 <div className="redes-sociais">
