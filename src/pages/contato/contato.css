@@ -1,0 +1,64 @@
+.contatoPage {
+    width: 100vw;
+    color: #fff;
+    overflow: hidden;
+}
+
+.contatoPage h1 {
+    text-transform: uppercase;
+}
+
+.textos {
+    padding: 20px;
+}
+
+
+.textos p {
+    margin: 10px 0px;
+}
+
+div.icons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+.ul-icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons img {
+    width: 25px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.form {
+    background-color: #1B263B;
+    height: 370px;
+    border-bottom: 1px solid #ccc;
+}
+
+form input, form textarea {
+    margin: 10px 20px;
+    width: 250px;
+    height: 25px;
+    border-radius: 15px;
+}
+
+form input::placeholder {
+    color: #000;
+    padding: 5px;
+}
+
+form textarea {
+    height: 100px;
+}
+
+textarea::placeholder {
+    color: #000;
+    padding: 5px;
+}
+
