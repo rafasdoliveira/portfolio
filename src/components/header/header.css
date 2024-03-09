@@ -15,7 +15,6 @@ header h1 {
     left: 5%;
 }
 
-
 .menu {
     display: flex;
     flex-direction: column;
@@ -34,6 +33,7 @@ header h1 {
 }
 
 .ul {
+    justify-content: right;
     width: 100px;
     position: absolute;
     background-color: #141414;
@@ -42,6 +42,11 @@ header h1 {
     bottom: 10;
     right: 0;
     text-transform: uppercase;
+}
+
+.li {
+    border-bottom: 1px solid #ccc;
+    margin: 10px;
 }
 
 /* Tablet Styles */
@@ -80,9 +85,11 @@ header h1 {
         background-color: transparent;
         position: relative;
     }
-
+    
     .li {
+        border-bottom: none;
         padding: 10px;
+        margin: 0px;
     }
    
 }

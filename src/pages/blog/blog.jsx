@@ -1,7 +1,12 @@
+import Header from '../../components/header/header';
+
 const Blog = () => {
+    
     return (
-        <div>
-        </div>
+        <>
+            <Header/>
+        blog
+        </>
     );
 };
 

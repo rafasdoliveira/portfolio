@@ -1,7 +1,11 @@
+import Header from "../../components/header/header";
+
 const Portfolio = () => {
     return (
-        <div>
-        </div>
+        <>
+            <Header/>
+            portfolio
+        </>
     );
 };
 

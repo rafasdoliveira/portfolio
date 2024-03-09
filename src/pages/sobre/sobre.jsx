@@ -1,7 +1,11 @@
+import Header from "../../components/header/header";
+
 const Sobre = () => {
     return (
-        <div>
-        </div>
+        <>
+            <Header/>
+            sobre
+        </>
     );
 };
 

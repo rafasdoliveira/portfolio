@@ -24,14 +24,15 @@ const Header = () => {
     }
 
     return (
+        <>
         <header>
             <h1>RSO</h1>
             <div className="menu">
-                <div onClick={toggleMenu}>
-                    <img className='img' src={Barra} alt="" />
+                <div>
+                    <img onClick={toggleMenu} className='img' src={Barra} alt="" />
                 </div>
                 <nav>
-                    <ul className={`${isMenuOpen ? 'open' : 'ul'}`}>
+                    <ul className={`ul ${isMenuOpen ? 'open' : ''}`}>
                         {navItems.map((item) => (
                             <li className='li' key={item.id}>
                                 <Link to={item.url}>{item.text}</Link>
@@ -41,6 +42,8 @@ const Header = () => {
                 </nav>
             </div>
         </header>
+        
+        </>
     );
 };
 
