@@ -26,7 +26,11 @@ const Header = () => {
     return (
         <>
         <header>
-            <h1>RSO</h1>
+            <h1>
+                <Link to={"/"}>
+                RSO
+                </Link>
+            </h1>
             <div className="menu">
                 <div>
                     <img onClick={toggleMenu} className='img' src={Barra} alt="" />
