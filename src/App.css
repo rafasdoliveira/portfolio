@@ -1,0 +1,92 @@
+.container-sobre {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+}
+
+.container-sobre img {
+    width: 160px;
+    margin-top: 30px;
+}
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textos h1 {
+    text-transform: uppercase;
+}
+
+.textos p {
+    font-size: 14px;
+    text-align: center;
+    width: 298px;
+}
+
+.container-sobre button {
+    width: 150px;
+    height: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+}
+
+.container-sobre button:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.container-portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 550px;
+    background-color: #141414;
+    overflow-y: hidden;
+    border-bottom: 1px solid #ccc;
+}
+
+.container-portfolio h2 {
+    text-transform: uppercase;
+    margin: 15px;
+}
+.container-portfolio .cards-programacao {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+}
+
+.cards-programacao .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 190px;
+    width: 100%;
+}
+
+.card span{
+    display: flex;
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+}
+
+.card button {
+    width: 150px;
+    height: 25px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    color: #fff;
+}
+
