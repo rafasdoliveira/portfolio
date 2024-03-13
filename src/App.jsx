@@ -1,3 +1,5 @@
+// Rotas
+import { Link } from 'react-router-dom'
 // Componentes
 import Header from './components/header/header'
 import CardsProgramacao from './components/CardsHome/CardsProgramacao'
@@ -22,7 +24,9 @@ function App() {
             Fotógrafo e Programador, apaixonado por esportes e pela busca do limite máximo.  
           </p>
         </div>
-        <button>Saiba mais</button>
+        <button>
+          <Link to='/sobre'>Saiba mais</Link>
+        </button>
       </div>
       <div className="container-portfolio">
         <CardsProgramacao h2='Portfólio Programação'/> 

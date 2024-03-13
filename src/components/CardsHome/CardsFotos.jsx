@@ -1,16 +1,17 @@
+import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import './cards.css'
 
 const CardsFotos = ({h2}) => {
   
     const [portfolioFoto] = useState([
-        {id: 1, src: '', alt: ''},
-        {id: 2, src: '', alt: ''},
-        {id: 3, src: '', alt: ''},
-        {id: 4, src: '', alt: ''},
-        {id: 5, src: '', alt: ''},
-        {id: 6, src: '', alt: ''},
-        {id: 7, src: '', alt: ''},
+        {id: 1, src: '', alt: '', link:''},
+        {id: 2, src: '', alt: '', link:''},
+        {id: 3, src: '', alt: '', link:''},
+        {id: 4, src: '', alt: '', link:''},
+        {id: 5, src: '', alt: '', link:''},
+        {id: 6, src: '', alt: '', link:''},
+        {id: 7, src: '', alt: '', link:''},
     ])
 
     return (
@@ -22,7 +23,9 @@ const CardsFotos = ({h2}) => {
                     <span>
                         <img srcSet={item.src} alt={item.alt} />
                     </span>
-                    <button>Ver mais</button>
+                    <button>
+                        <Link to={item.link}>Ver mais</Link>
+                    </button>
                 </div>
             ))}
         </div>
