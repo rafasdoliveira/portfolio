@@ -33,7 +33,7 @@ const Header = () => {
             </h1>
             <div className="menu">
                 <div>
-                    <img onClick={toggleMenu} className='img' src={Barra} alt="" />
+                    <img onClick={toggleMenu} className='img' srcSet={Barra} alt="" />
                 </div>
                 <nav>
                     <ul className={`ul ${isMenuOpen ? 'open' : ''}`}>

@@ -4,8 +4,8 @@ header {
     align-items: center;
     justify-content: center;
     background-color: #141414;
-    width: 94.7vw;
-    padding: 10px;
+    width: 100%;
+    height: 3rem;
 }
 
 header h1 {
@@ -19,7 +19,7 @@ header h1 {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-left: 85%;
+    margin-left: 80%;
     width: 30px;
     position: relative;
 }

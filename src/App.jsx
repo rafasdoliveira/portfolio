@@ -1,9 +1,11 @@
 // Componentes
 import Header from './components/header/header'
+import CardsProgramacao from './components/CardsHome/CardsProgramacao'
 // Estilo
 import './App.css'
 // Imagens
 import Rafael from './assets/images/rafaelPerfil.png'
+import CardsFotos from './components/CardsHome/CardsFotos'
 
 function App() {
 
@@ -11,7 +13,7 @@ function App() {
     <>
       <Header/>
       <div className="container-sobre">
-        <img src= {Rafael}/>
+        <img srcSet= {Rafael} />
         <div className='textos'>
           <h1>
             Rafael Oliveira
@@ -23,40 +25,10 @@ function App() {
         <button>Saiba mais</button>
       </div>
       <div className="container-portfolio">
-        <h2>Portfólio Programação</h2>
-        <div className="cards-programacao">
-          <div className="card">
-            <span>
-              <img src="" alt="" srcset="" />
-            </span>
-            <button>Ver mais</button>
-          </div>
-          <div className="card">
-            <span>
-              <img src="" alt="" srcset="" />
-            </span>
-            <button>Ver mais</button>
-          </div>
-        </div>
-        <h2>Portfólio Fotografia</h2>
-        <div className="cards-programacao">
-          <div className="card">
-            <span>
-              <img src="" alt="" srcset="" />
-            </span>
-            <button>Ver mais</button>
-          </div>
-          <div className="card">
-            <span>
-              <img src="" alt="" srcset="" />
-            </span>
-            <button>Ver mais</button>
-          </div>
-        </div>
+        <CardsProgramacao h2='Portfólio Programação'/> 
+        <CardsFotos h2='Portfólio Fotografia'/>
       </div>
-      <div className="teste">
-        teste
-      </div>
+     <div className="teste">aaaa</div>
     </>
   )
 }

@@ -1,3 +1,4 @@
+
 .container-sobre {
     border-bottom: 1px solid #ccc;
     display: flex;
@@ -43,50 +44,13 @@
     color: #000;
 }
 
+
 .container-portfolio {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 550px;
+    height: 100%;
     background-color: #141414;
     overflow-y: hidden;
     border-bottom: 1px solid #ccc;
 }
-
-.container-portfolio h2 {
-    text-transform: uppercase;
-    margin: 15px;
-}
-.container-portfolio .cards-programacao {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 100%;
-}
-
-.cards-programacao .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 190px;
-    width: 100%;
-}
-
-.card span{
-    display: flex;
-    height: 150px;
-    width: 150px;
-    border-radius: 5px;
-    margin-top: 10px;
-    border: 1px solid #ccc;
-}
-
-.card button {
-    width: 150px;
-    height: 25px;
-    margin-top: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    background-color: transparent;
-    color: #fff;
-}
-
