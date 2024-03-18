@@ -1,8 +1,8 @@
+// Componente
 import Header from "../../components/header/header";
-
+import CardsProgramacao from "../../components/CardsPortoflio/CardsProgramacao";
 // Estilo
 import './portfolio.css'
-import CardsProgramacao from "../../components/CardsPortoflio/CardsProgramacao";
 
 const Portfolio = () => {
     return (

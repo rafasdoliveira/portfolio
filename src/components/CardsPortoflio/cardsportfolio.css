@@ -63,11 +63,17 @@
     border: 1px solid #ccc;
     border-radius: 10px;
     margin-right: 10px;
-    padding: 3px;
+}
+
+.to {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 5px;    
 }
 
 .link img {
-    width: 25px;
+    width: 20px;
 }
 
 .link button {
