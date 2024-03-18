@@ -38,7 +38,31 @@ const cardPortfolioDev = () => {
             projetoSvg: Globe,
             projetoLink: "https://registration-form-ruddy.vercel.app/",
             linguagens: [Html, Css] 
-            },
+        },
+        {
+            id: 3, 
+            img: "", 
+            alt: "",
+            titulo: "Spotify",
+            descricao: "Projeto desenvolvido na cadeira de Desenvolvimento Web, para aprendizado e prática de aplicação FullStack", 
+            githubSvg: GitHub,
+            githubLink: "https://github.com/rafasdoliveira/registration-form",
+            projetoSvg: Globe,
+            projetoLink: "https://spotify-git-main-rafasdoliveira.vercel.app/",
+            linguagens: [React, Node] 
+        },
+        {
+            id: 4, 
+            img: "", 
+            alt: "",
+            titulo: "Fortlog Transportes",
+            descricao: "Projeto desenvolvido ", 
+            githubSvg: GitHub,
+            githubLink: "https://github.com/rafasdoliveira/registration-form",
+            projetoSvg: Globe,
+            projetoLink: "https://fortlog-transportes.vercel.app/",
+            linguagens: [React, Node] 
+        },
     ])
 
   return cardProjeto
