@@ -25,7 +25,7 @@ const Sobre = () => {
                         <li>
                             <span><img srcSet={Sangue} alt=""/></span>
                             <p>
-                                Doador de sangue desde 2018, com 12 doações realizadas até o momento.
+                                Doador de sangue desde 2018, com 12 doações realizadas.
                             </p>
                         </li>
                         <li>

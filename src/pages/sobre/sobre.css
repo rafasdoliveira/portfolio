@@ -18,7 +18,15 @@
 }
 
 .curiosidades {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
     padding: 10px;
+    background-color: #141414;
+}
+
+.curiosidades ol {
+    margin: 10px 0px;
 }
 
 .curiosidades li {

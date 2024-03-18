@@ -14,10 +14,18 @@ const Contato = () => {
         <>
             <Header/>
             <div className="contatoPage">
-                <div className="formContato">
-                    <form>
+                <div>
+                    <div className="intro">
+                    <div className="textosPortfolio">
+                        <h2>Me mande uma mensagem!</h2>
+                        <p>
+                            Fique à vontade para entrar em contato, seja sobre projetos, oportunidades de trabalho ou apenas para uma conversa.
+                        </p>
+                    </div>
+                    </div>
+
+                    <form className='form'>
                         <div className="input">
-                            <h1 className='textos'>Me envie um e-mail</h1>
                             <input type="text" name="assunto" id="assunto" placeholder='Assunto'/>
                             <input type="text" name="nome" id="nome" placeholder='Nome'/>
                             <input type="email" name="email" id="email" placeholder='E-mail'/>
@@ -28,6 +36,7 @@ const Contato = () => {
                         </div>
                     </form>
                 </div>
+
                 <div className="redes-sociais">
                 <div className="textos">
                         <p>Fale nas redes sociais ou por e-mail!</p>
