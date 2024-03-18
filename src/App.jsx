@@ -16,7 +16,7 @@ function App() {
       <Header/>
       <div className="container-sobre">
         <img srcSet= {Rafael} />
-        <div className='textos'>
+        <div className='textosHome'>
           <h1>
             Rafael Oliveira
           </h1>
@@ -32,7 +32,6 @@ function App() {
         <CardsProgramacao h2='Portfólio Programação'/> 
         <CardsFotos h2='Portfólio Fotografia'/>
       </div>
-     <div className="teste">aaaa</div>
     </>
   )
 }

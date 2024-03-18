@@ -12,17 +12,19 @@
     margin-top: 30px;
 }
 
-.textos {
+.textosHome {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.textos h1 {
+.textosHome h1 {
+    margin-top: 15px;
     text-transform: uppercase;
 }
 
-.textos p {
+.textosHome p {
+    margin: 10px;
     font-size: 14px;
     text-align: center;
     width: 298px;
@@ -31,6 +33,7 @@
 .container-sobre button {
     width: 150px;
     height: 30px;
+    margin: 10px;
     text-transform: uppercase;
     font-weight: bold;
     color: #fff;
