@@ -1,0 +1,38 @@
+.intro {
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.textosPortfolio {
+    padding: 10px;
+}
+
+.intro h2 {
+    text-transform: uppercase;
+    margin: 10px 0px;
+}
+
+.intro p {
+    text-align: justify;
+    margin: 10px 0px;
+}
+
+.curiosidades {
+    padding: 10px;
+}
+
+.curiosidades li {
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    border: 1px solid #ccc;
+}
+
+.curiosidades img {
+    width: 20px;
+    margin-left: 5px;
+}
+
+.curiosidades li p {
+    margin: 0px 10px;
+}
