@@ -13,12 +13,13 @@ const Sobre = () => {
     return (
         <>
             <Header/>
-            <div className="intro">
+            <div className="introSobre">
                 <div className="textosPortfolio">
                     <h2>Sobre &copy;</h2>
                     <p>Apaixonado por tecnologia, fotografia, livros e esportes.</p>
                     <p>Motivado a entender o funcionamento das coisas e obstinado a buscar meu potencial máximo através do esporte.</p>
                 </div>
+              
                 <div className="curiosidades">
                     <h2>Curiosidades Aleatórias</h2>
                     <ol>
@@ -53,6 +54,17 @@ const Sobre = () => {
                             </p>
                         </li>
                     </ol>
+                </div>
+                <div className="historia">
+                    <h2>Minha história</h2>
+                    <div className="cardzao">
+                        <div className="cardzinho">
+                            <img src="" alt="" />     
+                        </div>
+                        <p>
+                            Nascido em São Paulo, capital, em 2001, sou o filho mais novo da família.
+                        </p>
+                    </div>
                 </div>
             </div>
         </>

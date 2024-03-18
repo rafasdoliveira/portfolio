@@ -1,27 +1,29 @@
-.intro {
+.introSobre {
     width: 100%;
-    margin: 10px 0px;
 }
 
 .textosPortfolio {
-    padding: 10px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
 }
 
-.intro h2 {
+.introSobre h2 {
+    margin-top: 10px;
     text-transform: uppercase;
-    margin: 10px 0px;
 }
 
-.intro p {
+.introSobre p {
     text-align: justify;
     margin: 10px 0px;
 }
 
+
 .curiosidades {
     display: flex;
     flex-direction: column;
-    height: 70vh;
-    padding: 10px;
+    height: 100%;
+    padding: 20px;
     background-color: #141414;
 }
 
@@ -43,4 +45,32 @@
 
 .curiosidades li p {
     margin: 0px 10px;
+}
+
+.historia {
+    height: 200px;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.cardzao {
+    display: flex;
+    height: 150px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.cardzinho {
+    width: 100px;
+    margin: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.cardzao p {
+    width: 170px;
+    margin: 15px;
+    font-size: 14px;
 }
