@@ -14,8 +14,6 @@ const cardsHome = ({h2, src, alt}) => {
         {id: 7, src: '', alt: '', link:''},
     ])
 
-
-
     return (
     <>
         <h2 className='h2Cards'>{h2}</h2>
