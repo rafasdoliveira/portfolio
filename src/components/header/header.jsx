@@ -21,7 +21,7 @@ const Header = () => {
     const handleClickOutside = (event) => {
         if(!isMenuOpen) return
         if(menuRef.current && !menuRef.current.contains(event.target)) {
-            setIsMenuOpen(false)    
+            setIsMenuOpen(true)    
         }
     }
 
