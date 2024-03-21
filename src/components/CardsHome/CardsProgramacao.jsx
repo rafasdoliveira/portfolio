@@ -20,7 +20,7 @@ const cardsHome = ({h2, src, alt}) => {
     <>
         <h2 className='h2Cards'>{h2}</h2>
         <div className="cards">
-            {portfolioDev.slice(-4).map((item) => (
+            {portfolioDev.slice(-2).map((item) => (
                 <div key={item.id} className="card">
                     <span>
                         <img srcSet={item.src} alt={item.alt} />
