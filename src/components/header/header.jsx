@@ -6,22 +6,32 @@ import { Link } from 'react-router-dom';
 import './header.css';
 // Ícone
 import Barra from '../../assets/icons/responsividade/bars-solid.svg';
-
-import { useState } from 'react';
+// Hooks
+import { useEffect, useRef, useState } from 'react';
 
 const Header = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(true);
+    const menuRef = useRef(null);   
     const navItems = constNav();
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
-    const closeMenu = () => {
-        if (isMenuOpen) {
-            setIsMenuOpen(false);
+    const handleClickOutside = (event) => {
+        if(!isMenuOpen) return
+        if(menuRef.current && !menuRef.current.contains(event.target)) {
+            setIsMenuOpen(false)    
         }
     }
+
+    useEffect(() => {
+        document.addEventListener('mousedown', handleClickOutside)
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside)
+        }
+    },[])
+    
 
     return (
         <>
@@ -31,7 +41,7 @@ const Header = () => {
                 RSO
                 </Link>
             </h1>
-            <div className="menu">
+            <div className="menu" ref={menuRef}>
                 <div>
                     <img onClick={toggleMenu} className='img' srcSet={Barra} alt="" />
                 </div>
