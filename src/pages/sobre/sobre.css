@@ -46,7 +46,7 @@
 }
 
 .historia {
-    height: 200px;
+    height: 100%;
     padding: 20px;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
@@ -61,14 +61,26 @@
 }
 
 .cardzinho {
-    width: 100px;
+    width: 70%;
     margin: 15px;
     border-radius: 10px;
     border: 1px solid #ccc;
 }
 
-.cardzao p {
-    width: 170px;
-    margin: 15px;
+.textosHistoria {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 5px 10px;
+}
+
+.textosHistoria h2 {
     font-size: 14px;
+    text-align: justify;
+    border-bottom: 2px solid #ccc;
+}
+
+.textosHistoria p {
+    font-size: 14px;
+    text-align: justify;
 }

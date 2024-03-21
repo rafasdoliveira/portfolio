@@ -61,9 +61,23 @@ const Sobre = () => {
                         <div className="cardzinho">
                             <img src="" alt="" />     
                         </div>
-                        <p>
-                            Nascido em São Paulo, capital, em 2001, sou o filho mais novo da família.
-                        </p>
+                        <div className="textosHistoria">
+                            <h2>2001</h2>
+                            <p>
+                                Nascido em São Paulo, capital, em 2001, sou o filho mais novo da família.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="cardzao">
+                        <div className="cardzinho">
+                            <img src="" alt="" />     
+                        </div>
+                        <div className="textosHistoria">
+                            <h2>2018</h2>
+                            <p>
+                                Formado em Finanças pelo Ensino Médio Técnico, na EEEP José de Barcelos.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
