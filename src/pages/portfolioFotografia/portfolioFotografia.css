@@ -1,0 +1,23 @@
+.intro {
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.textosPortfolio {
+    padding: 10px;
+}
+
+.intro h2 {
+    text-transform: uppercase;
+    margin: 10px 0px;
+}
+
+.intro p {
+    text-align: justify;
+    margin: 10px 0px;
+}
+
+.container-porfolio-dev {
+    height: 100%;
+    background-color: #141414;
+}

@@ -21,7 +21,7 @@ function App() {
             Rafael Oliveira
           </h1>
           <p>
-            Fotógrafo e Programador, apaixonado por esportes e pela busca do limite máximo.  
+            Desenvolvedor e fotógrafo, entusiasta de esportes, sempre em busca do próximo desafio.  
           </p>
         </div>
         <button>

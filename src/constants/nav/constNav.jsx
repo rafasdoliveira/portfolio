@@ -4,8 +4,10 @@ const ConstNav = () => {
     
     const [navItems] = useState([
         {id: 1, url: '/sobre', text: 'Sobre'},
-        {id: 2, url: '/portfolio', text: 'Portfólio'},	
-        {id: 3, url: '/contato', text: 'Contato'}
+        {id: 2, url: '/experienciaprofissional', text: 'Experiência Profissional'},	
+        {id: 3, url: '/portfolio', text: 'Portfólio Dev'},	
+        {id: 4, url: '/portfoliofotografia', text: 'Portfólio Foto'},	
+        {id: 5, url: '/contato', text: 'Contato'}
     ]);
 
     return navItems

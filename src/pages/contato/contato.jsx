@@ -1,8 +1,8 @@
+// Rota
+import { Link } from 'react-router-dom';
 // Componente
 import NavRedeSocial from '../../constants/navRedeSocial/navRedeSocial';
 import Header from '../../components/header/header';
-// Rota
-import { Link } from 'react-router-dom';
 // Estilos
 import './contato.css';
 

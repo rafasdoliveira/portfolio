@@ -5,10 +5,8 @@ import CardHistoria from "../../components/CardHistoria/CardHistoria";
 import './sobre.css'
 import CardCuriosidade from "../../components/CardCuriosidade/CardCuriosidade";
 
-
 const Sobre = () => {
     
-
     return (
         <>
             <Header/>
@@ -18,7 +16,6 @@ const Sobre = () => {
                     <p>Apaixonado por tecnologia, fotografia, livros e esportes.</p>
                     <p>Motivado a entender o funcionamento das coisas e obstinado a buscar meu potencial máximo através do esporte.</p>
                 </div>
-              
                 <CardCuriosidade/>
                 <CardHistoria/>
             </div>

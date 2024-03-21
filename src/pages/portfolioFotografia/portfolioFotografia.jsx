@@ -1,8 +1,7 @@
 // Componente
 import Header from "../../components/header/header";
-import CardsProgramacao from "../../components/CardsPortoflio/CardsProgramacao";
 // Estilo
-import './portfolio.css'
+import './portfolioFotografia.css'
 
 const Portfolio = () => {
     return (
@@ -10,15 +9,13 @@ const Portfolio = () => {
             <Header/>
             <div className="intro">
                 <div className="textosPortfolio">
-                    <h2>Programação &lt;&gt;</h2>
+                    <h2>Fotografia &lt;&gt;</h2>
                     <p>
-                        Confira alguns dos meus últimos trabalhos como desenvolvedor de software.
+                        Confira alguns dos meus últimos trabalhos como fotógrafo.
                     </p>
                 </div>
             </div>
-            <div className="container-porfolio-dev">
-                <CardsProgramacao/>
-            </div>
+            
         </>
     );
 };
