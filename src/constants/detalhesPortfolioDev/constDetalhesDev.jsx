@@ -22,21 +22,21 @@ const ConstDetalhesDev = () => {
             projetoIcon: globeIcon,
             projetoLink: '',
         },
-        {
-            id: 2,
-            url: 'https://www.youtube.com/watch?v=7f8xcMlC-G4&list=RDEMgHMf-d_LVQHvXo5AePBsaw&index=6',
-            playing: false,
-            controls: true,
-            width: '100%',
-            height: '100%',
-            nome: 'dois',
-            data: '21/03/2024',
-            descricao: 'Lorem Ipsum...',
-            githubIcon: githubIcon,
-            githubLink: '',
-            projetoIcon: globeIcon,
-            projetoLink: '',
-        }
+        // {
+        //     id: 2,
+        //     url: 'https://www.youtube.com/watch?v=7f8xcMlC-G4&list=RDEMgHMf-d_LVQHvXo5AePBsaw&index=6',
+        //     playing: false,
+        //     controls: true,
+        //     width: '100%',
+        //     height: '100%',
+        //     nome: 'dois',
+        //     data: '21/03/2024',
+        //     descricao: 'Lorem Ipsum...',
+        //     githubIcon: githubIcon,
+        //     githubLink: '',
+        //     projetoIcon: globeIcon,
+        //     projetoLink: '',
+        // }
     ])
 
     return detalhesDev

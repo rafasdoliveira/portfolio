@@ -37,9 +37,11 @@ const CardsProgramacao = () => {
                     </div>
                     <div className="links">
                         <div className="link">
-                            <Link className="to">
-                                <button onClick={() => handleOpenModal(item.id)}>Detalhes do projeto</button>
-                            </Link>
+                            {detalhes.find((detalhe) => detalhe.id === item.id) && (
+                                <Link className="to">
+                                    <button onClick={() => handleOpenModal(item.id)}>Detalhes do projeto</button>
+                                </Link>
+                            )}
                         </div>
                         {openModalId === item.id && <Modal isOpen={true} setModalOpen={() => setOpenModalId(null)} /> }
                     </div>
