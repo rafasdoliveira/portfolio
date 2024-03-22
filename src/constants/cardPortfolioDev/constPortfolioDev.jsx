@@ -1,5 +1,7 @@
 // Hook
 import { useState } from "react"
+// Componente
+import ConstDetalhesDev from "../detalhesPortfolioDev/constDetalhesDev"
 // Imagens
 import Html from "../../assets/icons/linguagens-programacao/html5.svg"
 import Css from "../../assets/icons/linguagens-programacao/css3-alt.svg"
@@ -8,8 +10,7 @@ import Js from "../../assets/icons/linguagens-programacao/js.svg"
 import Laravel from "../../assets/icons/linguagens-programacao/laravel.svg"
 import Node from "../../assets/icons/linguagens-programacao/node.svg"
 import React from "../../assets/icons/linguagens-programacao/react.svg"
-import GitHub from "../../assets/icons/redes-sociais/github.svg"
-import Globe from "../../assets/icons/redes-sociais/globe-solid.svg"
+
 
 
 const cardPortfolioDev = () => {
@@ -21,10 +22,7 @@ const cardPortfolioDev = () => {
             alt: "",
             titulo: "Anamnese",
             descricao: "Projeto desenvolvido na cadeira de Estrutura de Dados com o intuito de praticar e trazer conhecimento a estrutura árvore de decisão", 
-            githubSvg: GitHub,
-            githubLink: "https://github.com/rafasdoliveira/anamnese",
-            projetoSvg: Globe,
-            projetoLink: "https://anamnese-topaz.vercel.app/",
+            // detalhe: "portfolio/1",
             linguagens: [Html, Css, Js] 
         },
         {
@@ -33,10 +31,7 @@ const cardPortfolioDev = () => {
             alt: "",
             titulo: "Formulário de Registro",
             descricao: "Projeto desenvolvido em desafio do FreeCodeCamp, para prática de HTML e CSS", 
-            githubSvg: GitHub,
-            githubLink: "https://github.com/rafasdoliveira/registration-form",
-            projetoSvg: Globe,
-            projetoLink: "https://registration-form-ruddy.vercel.app/",
+            // detalhe: "portfolio/2",
             linguagens: [Html, Css] 
         },
         {
@@ -45,10 +40,7 @@ const cardPortfolioDev = () => {
             alt: "",
             titulo: "Spotify",
             descricao: "Projeto desenvolvido na cadeira de Desenvolvimento Web, para aprendizado e prática de aplicação FullStack", 
-            githubSvg: GitHub,
-            githubLink: "https://github.com/rafasdoliveira/registration-form",
-            projetoSvg: Globe,
-            projetoLink: "https://spotify-git-main-rafasdoliveira.vercel.app/",
+            // detalhe: "portfolio/3",
             linguagens: [React, Node] 
         },
         {
@@ -57,16 +49,12 @@ const cardPortfolioDev = () => {
             alt: "",
             titulo: "Fortlog Transportes",
             descricao: "Projeto desenvolvido ", 
-            githubSvg: GitHub,
-            githubLink: "https://github.com/rafasdoliveira/registration-form",
-            projetoSvg: Globe,
-            projetoLink: "https://fortlog-transportes.vercel.app/",
+            // detalhe: "portfolio/4",
             linguagens: [React, Node] 
         },
     ])
 
-  return cardProjeto
-
+    return cardProjeto;
 }
 
 export default cardPortfolioDev

@@ -3,14 +3,16 @@ import { Link } from 'react-router-dom'
 // Hooks
 import { useState } from 'react'
 // Componentes
-import cardPortfolioDev from '../../constants/cardPortfolioDev/cardPortfolioDev'
+import constPortfolioDev from '../../constants/cardPortfolioDev/constPortfolioDev'
+import ConstDetalhesDev from '../../constants/detalhesPortfolioDev/constDetalhesDev'
 import Modal from '../Modal/modal'
 // Estilo
 import './cardsportfolio.css'
 
 const CardsProgramacao = () => {
 
-    const cardProjeto = cardPortfolioDev()
+    const cardProjeto = constPortfolioDev()
+    const detalhes = ConstDetalhesDev()
     const [openModalId, setOpenModalId] = useState(null)
 
     const handleOpenModal = (id) => {
@@ -28,7 +30,6 @@ const CardsProgramacao = () => {
                         </span>
                         <div className="text">
                             <h2 className="h2Portfolio">{item.titulo}</h2>
-                            <p className='data'>26/01/2001</p>
                             <p>
                                 {item.descricao} 
                             </p>
@@ -37,12 +38,10 @@ const CardsProgramacao = () => {
                     <div className="links">
                         <div className="link">
                             <Link className="to">
-                                <span><img srcSet={item.projetoSvg} alt=""/></span>
                                 <button onClick={() => handleOpenModal(item.id)}>Detalhes do projeto</button>
                             </Link>
                         </div>
                         {openModalId === item.id && <Modal isOpen={true} setModalOpen={() => setOpenModalId(null)} /> }
-                       
                     </div>
                     <div className="linguages">
                         {item.linguagens.map((linguagem, index) => (
