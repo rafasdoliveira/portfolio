@@ -1,13 +1,17 @@
 // Rota
 import { Link } from 'react-router-dom'
+// Hooks
+import { useState } from 'react'
 // Componentes
 import cardPortfolioDev from '../../constants/cardPortfolioDev/cardPortfolioDev'
+import Modal from '../Modal/modal'
 // Estilo
 import './cardsportfolio.css'
 
 const CardsProgramacao = () => {
 
     const cardProjeto = cardPortfolioDev()
+    const [openModal, setOpenModal] = useState(false)
 
     return (
     <>
@@ -28,23 +32,12 @@ const CardsProgramacao = () => {
                     </div>
                     <div className="links">
                         <div className="link">
-                            <Link className="to" to={item.projetoLink}>
+                            <Link className="to">
                                 <span><img srcSet={item.projetoSvg} alt=""/></span>
-                                <button>Detalhes do projeto</button>
+                                <button onClick={() => setOpenModal(true)}>Detalhes do projeto</button>
                             </Link>
                         </div>
-                        {/* <div className="link">
-                            <Link className="to" to={item.githubLink}>
-                                <span><img srcSet={item.githubSvg} alt=""/></span>
-                                <button>Github</button>
-                            </Link>
-                        </div>
-                        <div className="link">
-                            <Link className="to" to={item.projetoLink}>
-                                <span><img srcSet={item.projetoSvg} alt=""/></span>
-                                <button>Ver Projeto</button>
-                            </Link>
-                        </div> */}
+                       <Modal isOpen={openModal} setModalOpen={setOpenModal}/>
                        
                     </div>
                     <div className="linguages">
