@@ -4,14 +4,16 @@
     left: 2%;
     z-index: 5;
 
+    display: flex;
+    justify-content: center;
+
     width: 360px;
     height: 630px;
     
     background-color: #141414;
-    border: 1px solid #ccc;
     border-radius: 10px;
+    border: 1px solid #ccc;
     overflow: auto;
-
 }
 
 .closeModal {
@@ -37,12 +39,11 @@
 
     height: 100%;
     
-    padding: 20px 15px;
-    margin-top: 30px;
+    padding: 20px ;
+    margin-top: 40px;
 
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-
 
 }
 

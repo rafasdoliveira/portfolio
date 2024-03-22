@@ -29,11 +29,11 @@ const detalhes = ConstDetalhesDev()
           </div>
           <div className="botoes">
             <div className="github">
-              <img src={item.githubIcon} alt="" />
+              {/* <img src={item.githubIcon} alt="" /> */}
               <button>Github</button>
             </div>
             <div className="github">
-              <img src={item.globeIcon} alt="" />
+              {/* <img src={item.globeIcon} alt="" /> */}
               <button>Projeto</button>
             </div>
           </div>
