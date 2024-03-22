@@ -11,7 +11,11 @@ import './cardsportfolio.css'
 const CardsProgramacao = () => {
 
     const cardProjeto = cardPortfolioDev()
-    const [openModal, setOpenModal] = useState(false)
+    const [openModalId, setOpenModalId] = useState(null)
+
+    const handleOpenModal = (id) => {
+        setOpenModalId(id)
+    }
 
     return (
     <>
@@ -34,10 +38,10 @@ const CardsProgramacao = () => {
                         <div className="link">
                             <Link className="to">
                                 <span><img srcSet={item.projetoSvg} alt=""/></span>
-                                <button onClick={() => setOpenModal(true)}>Detalhes do projeto</button>
+                                <button onClick={() => handleOpenModal(item.id)}>Detalhes do projeto</button>
                             </Link>
                         </div>
-                       <Modal isOpen={openModal} setModalOpen={setOpenModal}/>
+                        {openModalId === item.id && <Modal isOpen={true} setModalOpen={() => setOpenModalId(null)} /> }
                        
                     </div>
                     <div className="linguages">

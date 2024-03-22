@@ -1,19 +1,13 @@
 .modalComponent {
     position: fixed;
     top: 3%;
-    left: 3%;
-    bottom: 0;
-    right: 0;
-    z-index: 1050;
+    left: 2%;
+    z-index: 5;
 
-    display: flex;
-    flex-direction: column;
-
-    width: 350px;
+    width: 360px;
     height: 630px;
     
-    box-shadow: 0px 0px 50px 50px rgba(0, 0, 0, 0.9);
-    background-color: rgba(14, 14, 14, 0.8);
+    background-color: #141414;
     border: 1px solid #ccc;
     border-radius: 10px;
     overflow: auto;
@@ -43,18 +37,16 @@
 
     height: 100%;
     
-    padding: 20px;
-    margin: 50px 10px;
+    padding: 20px 15px;
+    margin-top: 30px;
 
     border-radius: 5px;
-    /* border: 1px solid #ccc; */
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
-    overflow-y: auto;
 
 }
 
-.modal .video-projeto .player {
+.modal .video-projeto player {
     height: 100%;
     border-radius: 15px;
     border: 1px solid #ccc;
@@ -65,7 +57,6 @@
 .modal .texto-projeto {
     width: 100%;
     margin-top: 20px;
-    color: #c0bebe;
 }
 
 .modal .texto-projeto h2 {
@@ -83,9 +74,30 @@
 
 .modal .texto-projeto .data {
     font-size: 15px;
-    color: #c0bebe;
     margin-top: 10px;
     font-weight: bold;
+    
 }
 
+.modal .botoes {
+    display: flex;
+    margin-top: 10px;
+}
 
+.modal .botoes button {
+    display: flex;
+    margin-right: 10px;
+    width: 80px; 
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modal .botoes button:hover {
+    background-color: #ccc;
+    color: #000;
+}
