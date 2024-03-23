@@ -19,6 +19,10 @@ const CardsProgramacao = () => {
         setOpenModalId(id)
     }
 
+    const teste = (id) => { 
+        console.log(id)
+    }
+
     return (
     <>
         <div className="cardsPortfolio">
@@ -37,13 +41,8 @@ const CardsProgramacao = () => {
                     </div>
                     <div className="links">
                         <div className="link">
-                            {detalhes.find((detalhe) => detalhe.id === item.id) && (
-                                <Link className="to">
-                                    <button onClick={() => handleOpenModal(item.id)}>Detalhes do projeto</button>
-                                </Link>
-                            )}
+                            <button onClick={() => setOpenModalId(item.id)}>Detalhes do projeto</button>
                         </div>
-                        {openModalId === item.id && <Modal isOpen={true} setModalOpen={() => setOpenModalId(null)} /> }
                     </div>
                     <div className="linguages">
                         {item.linguagens.map((linguagem, index) => (
@@ -53,6 +52,7 @@ const CardsProgramacao = () => {
                 </div>
             ))}
         </div>
+        <Modal isOpen={!!openModalId} id={openModalId} setModalOpen={() => setOpenModalId(null)} />
     </>
   )
 }

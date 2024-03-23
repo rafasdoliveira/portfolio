@@ -2,44 +2,47 @@ import ConstDetalhesDev from '../../constants/detalhesPortfolioDev/constDetalhes
 import ReactPlayer from 'react-player'
 import './modal.css'
 
-const Modal = ({isOpen, setModalOpen}) => {
+const Modal = ({isOpen, id, setModalOpen}) => {
 const detalhes = ConstDetalhesDev()
+
+const filterDetails = detalhes.filter((item) => item.id == id)[0]
 
   if(isOpen) {
     return (
+
     <div className="modalComponent">
       <div className="closeModal">
         <button onClick={() => setModalOpen(false)}>X</button>
       </div>
-      {detalhes.map((item) => (
-        <div key={item.id} className="modal">
+        <div key={filterDetails.id} className="modal">
           <div className="video-projeto">
             <ReactPlayer 
-            url={item.url}
-            playing={item.playing}
-            controls={item.controls}
-            width={item.width}
-            height={item.height}
+            url={filterDetails.url}
+            playing={filterDetails.playing}
+            controls={filterDetails.controls}
+            width={filterDetails.width}
+            height={filterDetails.height}
             />
           </div>
           <div className="texto-projeto">
-            <h2>{item.nome}</h2>
-            <p className='data'>{item.data}</p>
-            <p>{item.descricao}</p>
+            <p className='data'>{filterDetails.data}</p>
+            <p>{filterDetails.descricao}</p>
           </div>
           <div className="botoes">
             <div className="github">
-              {/* <img src={item.githubIcon} alt="" /> */}
+              {/* <img src={filterDetails.githubIcon} alt="" /> */}
               <button>Github</button>
             </div>
             <div className="github">
-              {/* <img src={item.globeIcon} alt="" /> */}
+              {/* <img src={filterDetails.globeIcon} alt="" /> */}
               <button>Projeto</button>
             </div>
           </div>
         </div>
-      ))}
-    </div>)
+      <h2>{filterDetails.nome}</h2>
+
+    </div>
+    )
   }
   return null
 }
