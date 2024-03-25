@@ -8,6 +8,7 @@ import Modal from '../Modal/modal'
 import './cardFotografia.css'
 // Imagem
 import Carro from "../../assets/images/carro.jpg"
+import Pescador from "../../assets/images/pescador.jpg"
 import Local from "../../assets/icons/cardFotos/location-dot-solid.svg"
 import Calendario from "../../assets/icons/cardFotos/calendar-regular.svg"
 import Equipamento from "../../assets/icons/cardFotos/camera-solid.svg"
@@ -16,7 +17,9 @@ import Equipamento from "../../assets/icons/cardFotos/camera-solid.svg"
 const CardFotografia = () => {
 
     const [detalhesEnsaios] = useState([
-        {id: 1, titulo: 'Autodromo Eusebio', img: Carro, localsvg: Local, local: 'Fortaleza, Ceará', datasvg: Calendario, data: '13 de setembro de 2023', equipamentosvg: Equipamento, equipamento: 'Canon, EOS Rebel SL3'}
+        {id: 1, titulo: 'Autodromo Eusebio', img: Carro, localsvg: Local, local: 'Eusébio, Ceará', datasvg: Calendario, data: '13 de setembro de 2023', equipamentosvg: Equipamento, equipamento: 'Canon, EOS Rebel SL3'},
+        {id: 2, titulo: 'Fortaleza', img: Pescador, localsvg: Local, local: 'Fortaleza, Ceará', datasvg: Calendario, data: '25 de julho de 2023', equipamentosvg: Equipamento, equipamento: 'Canon, EOS Rebel SL3'}
+
     ])
 
     return (
@@ -34,19 +37,19 @@ const CardFotografia = () => {
                      <span>
                          <img className='icon' src={item.localsvg} alt="" />
                      </span>
-                     <span className="texto">Fortaleza, Ceará</span>
+                     <span className="texto">{item.local}</span>
                  </div>
                  <div className="info">
                      <span className='icone'>
-                         <img className='icon' src={Calendario} alt="" />
+                         <img className='icon' src={item.datasvg} alt="" />
                      </span>
-                     <span className="texto">13 de setembro de 2023</span>
+                     <span className="texto">{item.data}</span>
                  </div>
                  <div className="info">
                      <span>
-                         <img className='icon' src={Equipamento} alt="" />
+                         <img className='icon' src={item.equipamentosvg} alt="" />
                      </span>
-                     <span className="texto">Canon, EOS Rebel SL#</span>
+                     <span className="texto">{item.equipamento}</span>
                  </div>
                  <button className='ensaio-btn'>Ver Ensaio</button>
              </div>
