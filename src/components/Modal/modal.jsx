@@ -19,12 +19,14 @@ const filterDetails = detalhes.filter((item) => item.id == id)[0]
             <ReactPlayer 
             url={filterDetails.url}
             playing={filterDetails.playing}
+            loop={filterDetails.loop}
             controls={filterDetails.controls}
             width={filterDetails.width}
             height={filterDetails.height}
             />
           </div>
           <div className="texto-projeto">
+            <h2>{filterDetails.nome}</h2> 
             <p className='data'>{filterDetails.data}</p>
             <p>{filterDetails.descricao}</p>
           </div>
@@ -39,7 +41,6 @@ const filterDetails = detalhes.filter((item) => item.id == id)[0]
             </div>
           </div>
         </div>
-      <h2>{filterDetails.nome}</h2>
 
     </div>
     )

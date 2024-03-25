@@ -83,6 +83,7 @@
 .link button {
     font-weight: bold;
     background: transparent;
+    text-transform: uppercase;
     border: none;
     color: #ccc;
 }

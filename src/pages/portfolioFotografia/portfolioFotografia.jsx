@@ -1,5 +1,6 @@
 // Componente
 import Header from "../../components/header/header";
+import CardFotografia from "../../components/CardFotografia/cardFotografia"; 
 // Estilo
 import './portfolioFotografia.css'
 
@@ -15,7 +16,9 @@ const Portfolio = () => {
                     </p>
                 </div>
             </div>
-            
+            <div className="container-porfolio-foto">
+                <CardFotografia/>
+            </div>
         </>
     );
 };
