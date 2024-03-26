@@ -1,11 +1,12 @@
 // Rota
 import { Link } from 'react-router-dom';
+// Hook
+import { useState, useEffect } from 'react';
 // Componente
 import NavRedeSocial from '../../constants/navRedeSocial/navRedeSocial';
 import Header from '../../components/header/header';
 // Estilos
 import './contato.css';
-import { useState, useEffect } from 'react';
 
 const url = 'http://localhost:3000/forms'
 
@@ -36,9 +37,6 @@ const Contato = () => {
         fetchData()
     }, [])
 
-    console.log(forms)
-
-
     const handleSubmit = async (e) => {
         e.preventDefault()
 
@@ -49,7 +47,7 @@ const Contato = () => {
             telefone,
             mensagem
         }
-
+        
         try{
             const response = await fetch(url, {
                 method: 'POST', 
@@ -61,7 +59,8 @@ const Contato = () => {
             if(!response.ok) {
                 throw new Error('Erro ao enviar os dados')
             }
-            } catch (error) {
+        } 
+        catch (error) {
                 alert(error)
             }
         }
