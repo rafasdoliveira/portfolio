@@ -1,11 +1,13 @@
-const Titulos = () => {
+import './titulos.css'
+
+const Titulos = ({titulo, descricao}) => {
   return (
     <>
       <div className="intro">
         <div className="textosPortfolio">
-          <h2>Me mande uma mensagem!</h2>
+          <h2>{titulo}</h2>
           <p>
-              Fique à vontade para entrar em contato, seja sobre projetos, oportunidades de trabalho ou apenas para uma conversa.
+              {descricao}
           </p>
         </div>
       </div>

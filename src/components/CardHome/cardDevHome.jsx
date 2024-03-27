@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
-import './cards.css'
+import './cardHome.css'
 
-const cardsHome = ({h2, src, alt}) => {
+const cardDevHome = ({h2, src, alt}) => {
     
     const [portfolioDev] = useState([
         {id: 1, src: '', alt: '', link:''},
@@ -33,4 +33,4 @@ const cardsHome = ({h2, src, alt}) => {
   )
 }
 
-export default cardsHome
+export default cardDevHome

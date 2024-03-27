@@ -1,5 +1,3 @@
-// Rota
-import { Link } from 'react-router-dom'
 // Hooks
 import { useState } from 'react'
 // Componentes
@@ -7,9 +5,9 @@ import constPortfolioDev from '../../constants/cardPortfolioDev/constPortfolioDe
 import ConstDetalhesDev from '../../constants/detalhesPortfolioDev/constDetalhesDev'
 import Modal from '../Modal/modal'
 // Estilo
-import './cardsportfolio.css'
+import './cardDev.css'
 
-const CardsProgramacao = () => {
+const CardDev = () => {
 
     const cardProjeto = constPortfolioDev()
     const detalhes = ConstDetalhesDev()
@@ -57,4 +55,4 @@ const CardsProgramacao = () => {
   )
 }
 
-export default CardsProgramacao
+export default CardDev

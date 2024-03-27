@@ -1,24 +1,19 @@
 // Componentes
-import Header from "../../components/header/header";
+import Header from "../../components/Header/header";
+import Titulos from "../../components/TitulosPaginas/titulos";
 import CardHistoria from "../../components/CardHistoria/CardHistoria";
+import CardCuriosidade from "../../components/CardCuriosidade/CardCuriosidade";
 // Estilo
 import './sobre.css'
-import CardCuriosidade from "../../components/CardCuriosidade/CardCuriosidade";
 
 const Sobre = () => {
     
     return (
         <>
             <Header/>
-            <div className="introSobre">
-                <div className="textosPortfolio">
-                    <h2>Sobre &copy;</h2>
-                    <p>Apaixonado por tecnologia, fotografia, livros e esportes.</p>
-                    <p>Motivado a entender o funcionamento das coisas e obstinado a buscar meu potencial máximo através do esporte.</p>
-                </div>
-                <CardCuriosidade/>
-                <CardHistoria/>
-            </div>
+            <Titulos titulo="Sobre &copy;" descricao="Apaixonado por tecnologia, fotografia, livros e esportes. Motivado a entender o funcionamento das coisas e obstinado a buscar meu potencial máximo através do esporte."/>
+            <CardCuriosidade/>
+            <CardHistoria/>
         </>
     );
 };

@@ -1,17 +1,11 @@
-import Header from "../../components/header/header"
+import Titulos from "../../components/TitulosPaginas/titulos"
+import Header from "../../components/Header/header"
 
 const ExperienciaProfissional = () => {
   return (
     <>
       <Header/> 
-      <div className="intro">
-        <div className="textosPortfolio">
-            <h2>Experiência Profissional</h2>
-            <p>
-              Veja minhas experiências profissionais, de vendedor à desenvolvedor de software.
-            </p>
-        </div>
-      </div>
+      <Titulos titulo='Experiência Profissional' descricao='Veja minhas experiências profissionais, de vendedor à desenvolvedor de software.'/>
     </>
   )
 }

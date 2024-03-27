@@ -1,13 +1,13 @@
 // Rotas
 import { Link } from 'react-router-dom'
 // Componentes
-import Header from './components/header/header'
-import CardsProgramacao from './components/CardsHome/CardsProgramacao'
+import Header from './components/Header/header'
+import CardDevHome from './components/CardHome/cardDevHome'
+import CardFotografiaHome from './components/CardHome/cardFotografiaHome'
 // Estilo
 import './App.css'
 // Imagens
 import Rafael from './assets/images/rafaelPerfil.png'
-import CardsFotos from './components/CardsHome/CardsFotos'
 
 function App() {
 
@@ -29,8 +29,8 @@ function App() {
         </button>
       </div>
       <div className="container-portfolio">
-        <CardsProgramacao h2='Portfólio Programação'/> 
-        <CardsFotos h2='Portfólio Fotografia'/>
+        <CardDevHome h2='Portóflio Programação'/>
+        <CardFotografiaHome h2='Portóflio Fotografia'/>
       </div>
     </>
   )

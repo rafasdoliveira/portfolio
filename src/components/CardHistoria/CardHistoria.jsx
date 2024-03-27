@@ -1,4 +1,4 @@
-import Historias from "../../constants/historias/historias"
+import Historias from "../../constants/historias/constHistorias"
 
 const CardHistoria = () => {
 

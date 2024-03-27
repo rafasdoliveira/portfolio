@@ -1,22 +1,3 @@
-.introSobre {
-    width: 100%;
-}
-
-.textosPortfolio {
-    padding: 20px;
-}
-
-.introSobre h2 {
-    margin-top: 10px;
-    text-transform: uppercase;
-}
-
-.introSobre p {
-    text-align: justify;
-    margin: 10px 0px;
-}
-
-
 .curiosidades {
     display: flex;
     flex-direction: column;
