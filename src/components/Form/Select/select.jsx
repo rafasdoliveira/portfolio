@@ -1,14 +1,14 @@
-const Select = ({ text, id, options, value }) => {
+import './select.css';
+
+const Select = ({ id, option, value, onChange }) => {
     return (
         <>
-            <label htmlFor={id}>
-                {text}
-                <select id={id} name={id} value={value} onChange={(e) => console.log(e.target.value)}>
-                    {options.map((option, index) => (
-                        <option key={index} value={option.value}>{option.label}</option>
-                    ))}
-                </select>
-            </label>
+           <select className='select' name={id} id={id} onChange={onChange}>
+            {Object.entries(option).map(([key, label]) => (
+                <option className='option' key={key} value={value}>{label}</option>
+            ))
+            }
+           </select>
         </>
     );
 };

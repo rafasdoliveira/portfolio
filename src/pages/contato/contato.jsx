@@ -76,6 +76,14 @@ const Contato = () => {
             }
         }
 
+        const listAssuntos = {
+            '0': 'Selecione o assunto',
+            '1': 'Dúvida',
+            '2': 'Sugestão',
+            '3': 'Reclamação',
+            '4': 'Outros'
+        }
+
     return (
         <>
             <Header/>
@@ -90,19 +98,19 @@ const Contato = () => {
                 </div>
                 <form className='form'>
                     <div className="input">
+                        <Select id="assunto" value={assunto} option={listAssuntos} onChange={(e) => setAssunto(e.target.value)}/>
                         <Input type="text" value={nome} id="nome" placeholder="Nome" required={true} onChange={(e) => setNome(e.target.value)} />
                         <Input type="email" value={email} id="email" placeholder="E-mail" required={true} onChange={(e) => setEmail(e.target.value)} />
                         <Input type="number" value={telefone} id="telefone" placeholder="Telefone" required={true} onChange={(e) => setTelefone(e.target.value)} />
                     </div>
                     <div className="textarea">
                         <TextArea value={mensagem} id="mensagem" placeholder="Mensagem" onChange={(e) => setMensagem(e.target.value)} />
-                        
                         <Input type="submit" value="Enviar" onClick={handleSubmit} />
                     </div>
                 </form>
                 <div className="redes-sociais">
                     <div className="textos">
-                        <p>Fale nas redes sociais ou por e-mail!</p>
+                        <p>Fale nas redes sociais!</p>
                     </div>
                     <div className="icons">
                         <ul className='ul-icons'>
