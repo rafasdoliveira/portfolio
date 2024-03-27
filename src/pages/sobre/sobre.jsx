@@ -1,8 +1,8 @@
 // Componentes
 import Header from "../../components/Header/header";
 import Titulos from "../../components/TitulosPaginas/titulos";
-import CardHistoria from "../../components/CardHistoria/CardHistoria";
-import CardCuriosidade from "../../components/CardCuriosidade/CardCuriosidade";
+import CardHistoria from "../../components/CardHistoria/cardHistoria";
+import CardCuriosidade from "../../components/CardCuriosidade/cardCuriosidade";
 // Estilo
 import './sobre.css'
 

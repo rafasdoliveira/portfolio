@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 // Hook
 import { useState, useEffect } from 'react';
 // Componente
-import NavRedeSocial from '../../constants/navRedeSocial/navRedeSocial';
+import NavRedeSocial from '../../constants/navRedeSocial/constNavRedeSocial';
 import Header from '../../components/Header/header';
 import Titulos from '../../components/TitulosPaginas/titulos.jsx';
 import Input from '../../components/Form/Input/input';
