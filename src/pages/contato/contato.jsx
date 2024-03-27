@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 // Componente
 import NavRedeSocial from '../../constants/navRedeSocial/navRedeSocial';
 import Header from '../../components/header/header';
+import Titulos from '../../components/TitulosPaginas/titulos.jsx';
 import Input from '../../components/Form/Input/input';
 import Select from '../../components/Form/Select/select';
 import TextArea from '../../components/Form/TextArea/textarea.jsx';
@@ -88,14 +89,7 @@ const Contato = () => {
         <>
             <Header/>
             <div className="contatoPage">
-                <div className="intro">
-                <div className="textosPortfolio">
-                    <h2>Me mande uma mensagem!</h2>
-                    <p>
-                        Fique à vontade para entrar em contato, seja sobre projetos, oportunidades de trabalho ou apenas para uma conversa.
-                    </p>
-                </div>
-                </div>
+                <Titulos/>
                 <form className='form'>
                     <div className="input">
                         <Select id="assunto" value={assunto} option={listAssuntos} onChange={(e) => setAssunto(e.target.value)}/>

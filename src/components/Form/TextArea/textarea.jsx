@@ -1,3 +1,4 @@
+import './textarea.css'
 
 const TextArea = ({id, value, placeholder, required, onChange}) => {
   return (
