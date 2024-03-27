@@ -5,6 +5,9 @@ import { useState, useEffect } from 'react';
 // Componente
 import NavRedeSocial from '../../constants/navRedeSocial/navRedeSocial';
 import Header from '../../components/header/header';
+import Input from '../../components/Form/Input/input';
+import Select from '../../components/Form/Select/select';
+import TextArea from '../../components/Form/TextArea/textarea.jsx';
 // Estilos
 import './contato.css';
 
@@ -21,21 +24,21 @@ const Contato = () => {
     const [mensagem, setMensagem] = useState('')
 
     useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await fetch(url)
-                if(!response) {
-                    throw new Error('Erro ao buscar os dados')
-                }
-                const data = await response.json()
-                setForms(data)
+        fetchData();
+    }, []);
+
+    const fetchData = async () => {
+        try {
+            const response = await fetch(url);
+            if (!response.ok) {
+                throw new Error('Erro ao buscar os dados');
             }
-            catch (error) {
-                console.log(error)
-            }
+            const data = await response.json();
+            setForms(data);
+        } catch (error) {
+            console.log(error);
         }
-        fetchData()
-    }, [])
+    };
 
     const handleSubmit = async (e) => {
         e.preventDefault()
@@ -59,7 +62,15 @@ const Contato = () => {
             if(!response.ok) {
                 throw new Error('Erro ao enviar os dados')
             }
+ 
+            fetchData()
+            setAssunto('')
+            setNome('')
+            setEmail('')
+            setTelefone('')
+            setMensagem('')
         } 
+
         catch (error) {
                 alert(error)
             }
@@ -79,17 +90,14 @@ const Contato = () => {
                 </div>
                 <form className='form'>
                     <div className="input">
-                        <input type="text" value={assunto} name="assunto" id="assunto" placeholder='Assunto'onChange={(e) => setAssunto(e.target.value)}/>
-
-                        <input type="text" value={nome} name="nome" id="nome" placeholder='Nome' onChange={(e) => setNome(e.target.value)}/>
-
-                        <input type="email" value={email} name="email" id="email" placeholder='E-mail' onChange={(e) => setEmail(e.target.value)}/>
-
-                        <input type="number" value={telefone} name="telefone" id="telefone" placeholder='Telefone' onChange={(e) => setTelefone(e.target.value)}/>
-                        </div>
+                        <Input type="text" value={nome} id="nome" placeholder="Nome" required={true} onChange={(e) => setNome(e.target.value)} />
+                        <Input type="email" value={email} id="email" placeholder="E-mail" required={true} onChange={(e) => setEmail(e.target.value)} />
+                        <Input type="number" value={telefone} id="telefone" placeholder="Telefone" required={true} onChange={(e) => setTelefone(e.target.value)} />
+                    </div>
                     <div className="textarea">
-                        <textarea value={mensagem} name="mensagem" id="mensagem" placeholder='Mensagem' onChange={(e) => setMensagem(e.target.value)}/>
-                        <input type="submit" value="Enviar" onClick={handleSubmit} />
+                        <TextArea value={mensagem} id="mensagem" placeholder="Mensagem" onChange={(e) => setMensagem(e.target.value)} />
+                        
+                        <Input type="submit" value="Enviar" onClick={handleSubmit} />
                     </div>
                 </form>
                 <div className="redes-sociais">
