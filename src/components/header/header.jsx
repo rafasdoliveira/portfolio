@@ -25,11 +25,15 @@ const Header = () => {
         }
     }
 
-    useEffect(() => {
+    const handleMouseEvent = () => {
         document.addEventListener('mousedown', handleClickOutside)
         return () => {
             document.removeEventListener('mousedown', handleClickOutside)
         }
+    }
+
+    useEffect(() => {
+        handleMouseEvent()
     },[])
 
     return (
