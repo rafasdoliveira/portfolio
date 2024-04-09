@@ -1,5 +1,5 @@
 // Componentes
-import Header from "../../components/Header/header";
+import Header from "../../components/Header/header"
 import Titulos from "../../components/TitulosPaginas/titulos";
 import CardHistoria from "../../components/CardHistoria/cardHistoria";
 import CardCuriosidade from "../../components/CardCuriosidade/cardCuriosidade";
