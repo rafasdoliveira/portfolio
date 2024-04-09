@@ -1,4 +1,3 @@
-
 .container-sobre {
     border-bottom: 1px solid #ccc;
     display: flex;
@@ -30,6 +29,10 @@
     width: 340px;
 }
 
+.caracteristicas {
+    display: none;
+}
+
 .container-sobre button {
     width: 150px;
     height: 30px;
@@ -57,4 +60,63 @@
     background-color: #141414;
     overflow-y: hidden;
     border-bottom: 1px solid #ccc;
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+    .container-sobre {
+        display: flex;
+        height: 100%;
+        border: 1px solid red;
+    }
+    
+    .container-sobre img {
+        width: 260px;
+        margin-top: 50px;
+    }
+    
+    .textosHome {
+        display: none;
+    }
+
+    .caracteristicas {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        border: 1px solid red;
+    }
+
+    .caracteristicas-indiduais {
+        display: flex;
+        border: 1px;
+    }
+    
+    .container-sobre button {
+        width: 150px;
+        height: 30px;
+        margin: 10px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #fff;
+        background-color: transparent;
+        border-radius: 15px;
+        border: 1px solid #ccc;
+    }
+    
+    .container-sobre button:hover {
+        background-color: #ccc;
+        color: #000;
+    }
+    
+    
+    .container-portfolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        padding: 20px 0px;
+        background-color: #141414;
+        overflow-y: hidden;
+        border-bottom: 1px solid #ccc;
+    }
 }
