@@ -33,6 +33,10 @@
     display: none;
 }
 
+.img-button {
+    display: none;
+}
+
 .container-sobre button {
     width: 150px;
     height: 30px;
@@ -50,7 +54,6 @@
     color: #000;
 }
 
-
 .container-portfolio {
     display: flex;
     flex-direction: column;
@@ -66,12 +69,13 @@
 @media (min-width: 1024px) {
     .container-sobre {
         display: flex;
+        flex-direction: row;
         height: 100%;
-        border: 1px solid red;
+        justify-content: center;
     }
     
     .container-sobre img {
-        width: 260px;
+        width: 300px;
         margin-top: 50px;
     }
     
@@ -82,15 +86,44 @@
     .caracteristicas {
         display: flex;
         flex-direction: column;
+        align-items: center;
         width: 500px;
-        border: 1px solid red;
     }
 
-    .caracteristicas-indiduais {
+    .img-mobile {
+        display: none;
+    }
+
+    .caracteristicas-individuais {
         display: flex;
-        border: 1px;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .caracteristicas-individuais h2 {
+        margin: 20px 0px;
+    }
+
+    .img-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+        margin: 20px;
+    }
+
+    .img-button img {
+        margin: 30px;
     }
     
+    button {
+        display: none;
+    }
+
     .container-sobre button {
         width: 150px;
         height: 30px;

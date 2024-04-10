@@ -23,15 +23,27 @@ function App() {
             <h2>{sobre[0].titulo}</h2>
             <p>{sobre[0].texto}</p>
           </div>
-          <h2>{sobre[2].titulo}</h2>
-          <p>{sobre[2].texto}</p>
+          <div className="caracteristicas-individuais">
+            <h2>{sobre[2].titulo}</h2>
+            <p>{sobre[2].texto}</p>
+          </div> 
          </div>
-        <img srcSet= {Rafael} />
+         <img className='img-mobile' srcSet= {Rafael} />
+        <div className="img-button">
+          <img srcSet= {Rafael} />
+          <button>
+          <Link to='/sobre'>Saiba mais</Link>
+        </button>
+        </div>
         <div className="caracteristicas">
-          <h2>{sobre[1].titulo}</h2>
-          <p>{sobre[1].texto}</p>
-          <h2>{sobre[3].titulo}</h2>
-          <p>{sobre[3].texto}</p>
+          <div className="caracteristicas-individuais">
+            <h2>{sobre[1].titulo}</h2>
+            <p>{sobre[1].texto}</p>
+          </div>
+          <div className="caracteristicas-individuais">
+            <h2>{sobre[3].titulo}</h2>
+            <p>{sobre[3].texto}</p>
+          </div>
         </div>
         <div className='textosHome'>
           <h1>
